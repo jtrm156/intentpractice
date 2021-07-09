@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestProject2</string>
+    <string name="find_password"> <u>비밀번호를 잊으셨나요?</u></string>
 </resources>
