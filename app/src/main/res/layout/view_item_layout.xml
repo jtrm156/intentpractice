@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
+    android:layout_height="115dp"
     android:background="#ECE8E8">
 
     <androidx.constraintlayout.widget.Guideline
@@ -12,28 +12,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="5dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gd_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="5dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gd_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="20dp"/>
+        app:layout_constraintGuide_end="10dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gd_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="20dp"/>
+        app:layout_constraintGuide_end="5dp"/>
 
     <TextView
         android:id="@+id/item_txt1"
@@ -42,8 +42,9 @@
         android:text="TextView"
         android:textColor="#817D7D"
         app:layout_constraintTop_toBottomOf="@+id/gd_top"
-        app:layout_constraintLeft_toRightOf="@id/gd_left"
-        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toRightOf="@id/item_img1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         />
 
     <TextView
@@ -52,13 +53,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="#714747"
-        android:textSize="30dp"
+        android:textColor="#0063DC"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/item_txt1"
-        app:layout_constraintLeft_toRightOf="@id/gd_left"
-        android:layout_marginLeft="30dp"
-         />
+        app:layout_constraintLeft_toRightOf="@id/item_img1"
+        android:layout_marginLeft="10dp"
+        />
 
     <TextView
         android:id="@+id/item_txt3"
@@ -69,6 +70,17 @@
         app:layout_constraintTop_toBottomOf="@+id/gd_top"
         app:layout_constraintRight_toLeftOf="@id/gd_right"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="5dp"
         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_img1"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        app:layout_constraintLeft_toRightOf="@id/gd_left"
+        app:layout_constraintTop_toBottomOf="@id/gd_top"
+        app:layout_constraintRight_toLeftOf="@id/item_txt1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/icon_user" />
 </androidx.constraintlayout.widget.ConstraintLayout>
